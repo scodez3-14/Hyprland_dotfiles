@@ -46,3 +46,4 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 export PATH="$HOME/.cargo/bin:$PATH"
+fastfetch
