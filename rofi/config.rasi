@@ -18,25 +18,27 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       1000px;
+    width:                       600px;
     x-offset:                    0px;
     y-offset:                    0px;
 
     /* properties for all widgets */
     enabled:                     true;
     border:			 2px solid;
-    border-color:		 @secondary-container;
+    border-color:		 rgba(255, 255, 255, 0.2);
     border-radius:               15px;
     cursor:                      "default";
-    background-color:            @on-primary-fixed;
+    background-color:            rgba(20,20,30,0.9);
+    blur : true;
+    optacity :0.9;
 }
 
 mainbox {
     enabled:                     true;
     spacing:                     0px;
     background-color:            transparent;
-    orientation:                 horizontal;
-    children:                    [ "imagebox", "listbox" ];
+    orientation:                 vertical;
+    children:                    [ "inputbar","listbox" ];
 }
 
 imagebox {
@@ -64,7 +66,7 @@ inputbar {
     spacing:                     10px;
     padding:                     15px;
     border-radius:               10px;
-    background-color:		 @on-primary;
+    background-color:		 transparent;
     text-color:			 @on-surface;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
@@ -142,8 +144,8 @@ element normal.active {
     text-color:                  @on-surface;
 }
 element selected.normal {
-    background-color:            @primary;
-    text-color:                  @on-secondary;
+    background-color:            rgba(50,50,70,0.8);
+    text-color:                  #FFFFFF;
 }
 element selected.urgent {
     background-color:            @error;

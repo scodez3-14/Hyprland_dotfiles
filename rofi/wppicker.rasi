@@ -1,0 +1,51 @@
+@import "config.rasi"
+
+/* Disable everything except images */
+configuration {
+  show-icons: true;
+  sidebar-mode: false;
+}
+
+window {
+  width: 720px;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+mainbox {
+  children: [ listview ];
+}
+
+entry {
+  enabled: false;
+}
+
+prompt {
+  enabled: false;
+}
+
+listview {
+  columns: 4;
+  lines: 3;
+  spacing: 16px;
+  fixed-height: true;
+}
+
+element {
+  padding: 6px;
+  border-radius: 12px;
+}
+
+element-text {
+  enabled: false;
+}
+
+element-icon {
+  size: 120px;
+  border-radius: 12px;
+}
+
+element selected {
+  background-color: @selected;
+}
+

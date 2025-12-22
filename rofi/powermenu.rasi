@@ -1,0 +1,15 @@
+@import "config.rasi"
+
+configuration {
+  show-icons: false;
+}
+
+window {
+  width: 300px;
+  border-radius: 18px;
+}
+
+listview {
+  lines: 4;
+}
+
